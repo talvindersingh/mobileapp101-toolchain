@@ -1,0 +1,15 @@
+applications:
+- path: .
+  memory: 128M
+  instances: 1
+  domain: mybluemix.net
+  name: mobileapp101
+  host: mobileapp101
+  disk_quota: 1024M
+  services:
+  - availability-monitoring-auto
+  - mobileapp101-AdvancedMobileAccess
+  - mobileapp101-imfpush
+  - mobileapp101-cloudantNoSQLDB
+  env:
+    ENABLE_ANALYTICS_SDK: 'no'
